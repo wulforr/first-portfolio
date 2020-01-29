@@ -1,22 +1,68 @@
 .App {
   text-align: center;
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
+h2{
+  color: #Da0a31;
+  position: absolute;
+  top:-1%;
+  left: 0%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  padding: 1% 2%;
+  font-size: 26px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.h2span{
   color: white;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #09d3ac;
+h2:hover{
+  cursor: pointer;
+}
+
+.contact{
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  font-size: 20px;
+  border-bottom: 3px solid #Da0a31;
+}
+.contact:hover{
+  cursor: pointer;
+}
+
+
+
+.nav{
+  position: fixed;
+  width: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  left: 2em;
+  bottom: 0;
+  height: 2em;
+  line-height: 2em;
+  transform: rotate(270deg);
+  transform-origin: 0% 100%;
+  font-size: 20px;
+}
+ul{
+  list-style-type: none;
+  padding: 0% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  /* display: inline-block; */
+  margin: 0 2em;
 }
