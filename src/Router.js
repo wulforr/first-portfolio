@@ -6,8 +6,12 @@ import About from './About'
 // import Contact from './Contact'
 import Projects from './Projects'
 import Contact from "./Contact";
+// import * as THREE from "three";
+
+
+
 export default class Router extends Component {
-    
+
     render() {
       console.log(window.innerWidth,window.innerHeight)
         return (
@@ -19,6 +23,8 @@ export default class Router extends Component {
                 {/* <Contact /> */}
             </div>
             <div id="main">
+      {/* <div ref={ref => (this.mount = ref)} /> */}
+            
             <Switch>
             <Route
                 exact

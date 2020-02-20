@@ -65,7 +65,7 @@ export default class ProjectTile extends Component {
                     </ul>
                     <div className="view-on-github">
                     {/* <a className="button" href="ww.jiu.com">View on github</a> */}
-                    <button className="project-link">View on Github</button>
+                    <button className="project-link-back">View on Github</button>
                 </div>
                 {/* </div> */}
                 {/* } */}
