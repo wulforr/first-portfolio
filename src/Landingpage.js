@@ -1,11 +1,79 @@
 import React, { Component } from 'react'
+import {motion} from 'framer-motion'
+
 
 export default class Landingpage extends Component {
     render() {
         return (
             <div className="landing-grid">
                 <div className="landing-grid-item item1">
-                    <div className="landing-page-main-text main-text1">Web Developer</div>
+                    <div className="landing-page-main-text main-text1" >
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity}}
+                        >W</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0}}
+                        >e</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0}}
+                        >b</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.4}}
+                        >&nbsp;</motion.div>
+
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.2}}
+                        >D</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.2}}
+                        >e</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.2}}
+                        >v</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.4}}
+                        >e</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.4}}
+                        >l</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.4}}
+                        >o</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.6}}
+                        >p</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.6}}
+                        >e</motion.div>
+                        
+                        <motion.div
+                        animate={{y:[0,20,0,-20,0]}}
+                        transition={{duration:2,loop:Infinity,delay:0.6}}
+                        >r</motion.div>
+                    </div>
                     {/* <div className="landing-page-main-text main-text2">Designer</div> */}
                 </div>
                 <div className="landing-grid-item item2">

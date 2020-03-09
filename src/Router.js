@@ -1,4 +1,4 @@
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Navbar from './Navbar'
 import React, { Component } from 'react'
 import App from './App'
@@ -6,7 +6,7 @@ import About from './About'
 // import Contact from './Contact'
 import Projects from './Projects'
 import Contact from "./Contact";
-// import * as THREE from "three";
+import {motion} from 'framer-motion'
 
 
 
@@ -15,9 +15,9 @@ export default class Router extends Component {
     render() {
       console.log(window.innerWidth,window.innerHeight)
         return (
-            <HashRouter>
+            <BrowserRouter>
             <div> 
-                <h2>Shaurya <span className="h2span">Vardhan</span></h2>
+                {/* <h2>Shaurya <span className="h2span">Vardhan</span></h2> */}
                 
                 <Navbar />
                 {/* <Contact /> */}
@@ -56,7 +56,7 @@ export default class Router extends Component {
               />
             </Switch>
             </div>
-            </HashRouter>
+            </BrowserRouter>
         )
     }
 }

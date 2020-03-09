@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 // import {faFacebookF} from '@fortawesome/free-brands-svg-icons'
+import * as emailjs from 'emailjs-com'
 library.add(fab)
 
 
@@ -17,6 +18,7 @@ export default class Contact extends Component {
     constructor(){
         super()
         this.state = {
+            name:'',
             email:'',
             text:''
         }
@@ -50,6 +52,25 @@ export default class Contact extends Component {
         this.setState({
             email: e.target.value
         })
+    }
+    sendemail = () => {
+        const { name, email, text } = this.state
+        let templateParams = {
+            from_name: email,
+            to_name: 'gsshaurya@gmail.com',
+            subject: 'portfolio-contact',
+            message_html: text,
+            name:name
+           }     
+           
+        emailjs.send(
+            'gmail',
+            'template_P1VIFv5G',
+             templateParams,
+            'user_hAvtSsgUoRgwCqDpsdjFQ'
+           )
+        console.log("Email sent")
+
     }
 
     render() {
@@ -104,14 +125,19 @@ export default class Contact extends Component {
                 {/* </div> */}
                 {/* <FontAwesomeIcon icon={faFacebookF} size='md' style={{color:'white'}} /> */}
             <div className="contact-section">
-                <div className="contact-left"><span>Contact Me</span></div>
+                <div className="contact-left">
+                    <span>Get In Touch</span>
+                </div>
                 <div className="contact-right">
+                    <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to gsshaurya@gmail.com and ~let's talk.</p>
                 <div className="form">
+                    <label className="form-label">Name</label>
+                    <input type="text" className="forminput" value={this.state.name} onChange={this.handlenamechange} placeholder="Enter your name"></input>
                     <label className="form-label">Email</label>
                     <input type="text" className="forminput" value={this.state.email} onChange={this.handleemailchange} placeholder="Enter your email"></input>
                     <label className="form-label">Message</label>
                     <textarea className="forminput" value={this.state.text} onChange={this.handletextchange} placeholder="Enter your message"/>
-                    <button className="contact-btn">Message Me</button>
+                    <button className="contact-btn" onClick={this.sendemail}>Message Me</button>
                 </div>
                 <div className="social-buttons">
                     <a href="https://www.facebook.com/" className="social-button facebook"><FontAwesomeIcon icon={['fab', 'facebook']} /> </a>

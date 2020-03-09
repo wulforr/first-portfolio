@@ -43,15 +43,15 @@ export default class ProjectTile extends Component {
             <div className="project-tile">
                 <div className='front'>
 
-                <img src={this.props.info.image} alt="project-tile" onMouseEnter={this.HandleOnMouseEnter} hovered={this.HandleOnMouseEnter}/>
-                <div className="project-content">
-                <div className="project-name">{this.props.info.name}</div>
-                <div className="project-desc">{this.props.info.description}</div>
-                </div>
-                <div className="view-on-github">
+                    <img src={this.props.info.image} alt="project-tile" onMouseEnter={this.HandleOnMouseEnter} hovered={this.HandleOnMouseEnter}/>
+                    <div className="project-content">
+                        <div className="project-name">{this.props.info.name}</div>
+                        <div className="project-desc">{this.props.info.description}</div>
+                    </div>
+                    <div className="view-on-github">
                     {/* <a className="button" href="ww.jiu.com">View on github</a> */}
                     <button className="project-link">View on Github</button>
-                </div>
+                    </div>
                 </div>
                 <div className="back">
 

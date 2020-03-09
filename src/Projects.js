@@ -20,13 +20,13 @@ export default class Projects extends Component {
                 },
                 {name:"Yes2HealthyLife",
                 image:require("./image1.png"),
-                description:"lorem emwsinv fwklenlskn nweklsnl mfwkln kfne slk  fealkenlkf eksf , mfmkmsk r m emwds mnekmlea;m smdl;am v  ljndasv ",
+                description:"A web app to help users get details about their health such as BMI and suggest food on the basis of their last three BMI",
                 rotation:"5deg",
                 techused:["React","PHP","API","NODE","MONGO"]
                 },
-                {name:"Color Game",
+                {name:"Sanidhya",
                 image:require("./image1.png"),
-                description:"lorem emwsinv fwklenlskn nweklsnl mfwkln kfne slk  fealkenlkf eksf , mfmkmsk r m emwds mnekmlea;m smdl;am v  ljndasv ",
+                description:"An App made to help missing children get reunited with their families. This project was part of team project.",
                 rotation:"-5deg",
                 techused:["React","PHP","API","NODE","MONGO"]
                 },
