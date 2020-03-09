@@ -132,7 +132,7 @@ export default class Contact extends Component {
                     <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to gsshaurya@gmail.com and ~let's talk.</p>
                 <div className="form">
                     <label className="form-label">Name</label>
-                    <input type="text" className="forminput" value={this.state.name} onChange={this.handlenamechange} placeholder="Enter your name"></input>
+                    <input type="text" className="forminput"  onChange={this.handlenamechange} value={this.state.name} placeholder="Enter your name"></input>
                     <label className="form-label">Email</label>
                     <input type="text" className="forminput" value={this.state.email} onChange={this.handleemailchange} placeholder="Enter your email"></input>
                     <label className="form-label">Message</label>
@@ -140,11 +140,11 @@ export default class Contact extends Component {
                     <button className="contact-btn" onClick={this.sendemail}>Message Me</button>
                 </div>
                 <div className="social-buttons">
-                    <a href="https://www.facebook.com/" className="social-button facebook"><FontAwesomeIcon icon={['fab', 'facebook']} /> </a>
+                    <a href="https://facebook.com/" className="social-button facebook"><FontAwesomeIcon icon={['fab', 'facebook']} /> </a>
                     <a href="https://twitter.com/" className="social-button twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                     <a href="https://github.com/" className="social-button github"><FontAwesomeIcon icon={['fab', 'github']} /></a>
-                    <a href="https://www.instagram.com/" className="social-button instagram"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
-                    <a href="https://www.linkedin.com/" className="social-button linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                    <a href="https://instagram.com/" className="social-button instagram"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+                    <a href="https://linkedin.com/" className="social-button linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
 
                 </div>
                 </div>

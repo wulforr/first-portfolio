@@ -17,6 +17,7 @@ export default class Navbar extends Component {
     // document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.opacity="1";
   };
+  
   handleNavClick = () => {
     document.getElementsByClassName("nav-grid")[0].style.display = "none";
     // document.getElementById("mySidenav").style.width = "0";

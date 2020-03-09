@@ -8,6 +8,9 @@ html {
   --btn-bg-color:#CE534E;
 }
 
+a{
+  text-decoration: none;
+}
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /* Reset */
@@ -101,6 +104,7 @@ body {
 }
 .button-div{
   width: 100%;
+  margin-left: -10%;
 }
 .main-page-button{
   display: inline-block;
@@ -123,7 +127,9 @@ body {
   /* width: 100%; */
 }
 
-
+.navlinkbtn{
+  width: 150%;
+}
 
 
 

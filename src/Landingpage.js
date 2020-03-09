@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {motion} from 'framer-motion'
+import {NavLink} from "react-router-dom"
 
 
 export default class Landingpage extends Component {
@@ -82,8 +83,8 @@ export default class Landingpage extends Component {
                             Hi, I am Shaurya, an aspiring Front-end Developer and Designer based out of Delhi, India. I create things with code and then turn them into a useful, usable and valuable User Interface.
                         </p>
                         <div className="button-div">
-                        <button className="main-page-button">Resume</button>
-                        <button className="main-page-button">Contact</button>
+                        <button className="main-page-button"><a href="https://drive.google.com/uc?export=download&id=1-CLQW5Ppbru8FptUsCFvgccLp9EyoIqs" download>Resume</a></button>
+                        <NavLink exact to ="/contact"><button className="main-page-button navlinkbtn">Contact</button></NavLink>
                         </div>
                     </div>
                 </div>

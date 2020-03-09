@@ -28,18 +28,9 @@ export default class ProjectTile extends Component {
     }
     
     render() {
-        var sectionStyle = {
-            transform: `rotate(${this.props.info.rotation})`
-          };
 
-          console.log(sectionStyle.transform)
         return (
-            // <div className="project-tile1" style={ sectionStyle }>
-            //     <img src={this.props.info.image} alt="project title"></img>
-            //     <h4>{this.props.info.name}</h4>
-            //     <p>{this.props.info.description}</p>
-            // </div>
-
+        
             <div className="project-tile">
                 <div className='front'>
 
@@ -50,13 +41,10 @@ export default class ProjectTile extends Component {
                     </div>
                     <div className="view-on-github">
                     {/* <a className="button" href="ww.jiu.com">View on github</a> */}
-                    <button className="project-link">View on Github</button>
+                    <button className="project-link"><a href={this.props.info.projectLink}>View on Github</a></button>
                     </div>
                 </div>
                 <div className="back">
-
-                {/* {this.state.hovered && */}
-                {/* <div className="project-tech"onMouseOver={this.HandleOnMouseEnter} onMouseLeave={this.handleOnMouseOut}> */}
                     <h5>Technologies Used</h5>
                     <ul>
                         {this.props.info.techused.map(ele=>{
@@ -64,11 +52,8 @@ export default class ProjectTile extends Component {
                         })}
                     </ul>
                     <div className="view-on-github">
-                    {/* <a className="button" href="ww.jiu.com">View on github</a> */}
-                    <button className="project-link-back">View on Github</button>
+                    <button className="project-link-back"><a href={this.props.info.projectLink}>View on Github</a></button>
                 </div>
-                {/* </div> */}
-                {/* } */}
                             </div>
             </div>
         )
