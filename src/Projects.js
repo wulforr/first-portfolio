@@ -38,45 +38,18 @@ export default class Projects extends Component {
         }
     }
 
-    handleRightClick = () => {
-        // console.log(this.state.projectsarr.shift())
-        let arr = this.state.projectsarr
-        let ele = arr.shift()
-        console.log(ele)
-        arr.push(ele)
-        console.log(arr)
-        this.setState({
-            projectsarr:arr
-        })
-        
-    }
-    handleLeftClick = () => {
-        // console.log(this.state.projectsarr.shift())
-        let arr = this.state.projectsarr
-        let ele = arr.pop()
-        console.log(ele)
-        arr.unshift(ele)
-        console.log(arr)
-        this.setState({
-            projectsarr:arr
-        })
-        
-    }
-
     render() {
         return (
             <div className="projects">
                 <div className="projects-title">My Projects</div>
                 <div className="projects-all">
                     {
-                        this.state.projectsarr.map(ele => {
+                        this.state.projectsarr.map((ele,index) => {
                             return(
-                            <ProjectTile info={ele} />
+                            <ProjectTile info={ele} key={index}/>
                         )})
                     }
                 </div>
-                {/* <div onClick={this.handleRightClick} id="right-btn">Next Project</div>
-                <div onClick={this.handleLeftClick} id="left-btn">Previous Project</div> */}
             </div>
         )
     }

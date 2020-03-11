@@ -17,14 +17,13 @@ export default class Router extends Component {
         return (
             <BrowserRouter>
             <div> 
-                {/* <h2>Shaurya <span className="h2span">Vardhan</span></h2> */}
-                
+
+
                 <Navbar />
-                {/* <Contact /> */}
+
             </div>
             <div id="main">
-      {/* <div ref={ref => (this.mount = ref)} /> */}
-            
+
             <Switch>
             <Route
                 exact

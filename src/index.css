@@ -115,11 +115,8 @@ body {
   background-color: transparent;
   border: 2.5px solid white;
   margin:10px;
-  /* margin-left: -20px; */
   font-size: 1.2rem;
-  /* background: #FF3D64; */
   background-color: transparent;
-  /* border: 1px solid #e76c67; */
   border: 2.5px solid var(--test-color);
   padding: 0.75rem 0.75rem;
   color:var(--test-color);
